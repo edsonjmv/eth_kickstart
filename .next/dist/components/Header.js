@@ -1,44 +1,54 @@
-'use strict';
+"use strict";
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _react = require('react');
+var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
-var _semanticUiReact = require('semantic-ui-react');
+var _semanticUiReact = require("semantic-ui-react");
+
+var _routes = require("../routes");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = 'C:\\Users\\edson.machado\\Documents\\ethereum_solidity\\kickstart\\components\\Header.js';
+var _jsxFileName = "C:\\Users\\edson.machado\\Documents\\ethereum_solidity\\kickstart\\components\\Header.js";
 
 exports.default = function () {
-
-  return _react2.default.createElement(_semanticUiReact.Menu, { style: { marginTop: '10px' }, __source: {
+  return _react2.default.createElement(_semanticUiReact.Menu, { style: { marginTop: "10px" }, __source: {
+      fileName: _jsxFileName,
+      lineNumber: 7
+    }
+  }, _react2.default.createElement(_routes.Link, { route: "/", __source: {
       fileName: _jsxFileName,
       lineNumber: 8
     }
-  }, _react2.default.createElement(_semanticUiReact.Menu.Item, {
-    __source: {
+  }, _react2.default.createElement("a", { className: "item", __source: {
       fileName: _jsxFileName,
-      lineNumber: 10
+      lineNumber: 9
     }
-  }, 'CrowdCoin'), _react2.default.createElement(_semanticUiReact.Menu.Menu, { position: 'right', __source: {
+  }, "CrowdCoin")), _react2.default.createElement(_semanticUiReact.Menu.Menu, { position: "right", __source: {
+      fileName: _jsxFileName,
+      lineNumber: 12
+    }
+  }, _react2.default.createElement(_routes.Link, { route: "/", __source: {
+      fileName: _jsxFileName,
+      lineNumber: 13
+    }
+  }, _react2.default.createElement("a", { className: "item", __source: {
       fileName: _jsxFileName,
       lineNumber: 14
     }
-  }, _react2.default.createElement(_semanticUiReact.Menu.Item, {
-    __source: {
+  }, "Campaigns")), _react2.default.createElement(_routes.Link, { route: "/campaigns/new", __source: {
       fileName: _jsxFileName,
-      lineNumber: 16
+      lineNumber: 17
     }
-  }, 'Campaigns'), _react2.default.createElement(_semanticUiReact.Menu.Item, {
-    __source: {
+  }, _react2.default.createElement("a", { className: "item", __source: {
       fileName: _jsxFileName,
-      lineNumber: 20
+      lineNumber: 18
     }
-  }, '+')));
+  }, "+"))));
 };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXEhlYWRlci5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIk1lbnUiLCJtYXJnaW5Ub3AiXSwibWFwcGluZ3MiOiI7Ozs7OztBQUFBLEFBQU87Ozs7QUFDUCxBQUFTLEFBRVQ7Ozs7OztrQkFBZSxZQUFNLEFBRW5COzt5QkFFRSxBQUFDLHVDQUFLLE9BQU8sRUFBRSxXQUFmLEFBQWEsQUFBYTtnQkFBMUI7a0JBQUEsQUFFRTtBQUZGO0dBQUEsa0JBRUcsY0FBRCxzQkFBQSxBQUFNOztnQkFBTjtrQkFBQTtBQUFBO0FBQUEsS0FGRixBQUVFLEFBSUEsOEJBQUMsY0FBRCxzQkFBQSxBQUFNLFFBQUssVUFBWCxBQUFvQjtnQkFBcEI7a0JBQUEsQUFFRTtBQUZGO3FCQUVHLGNBQUQsc0JBQUEsQUFBTTs7Z0JBQU47a0JBQUE7QUFBQTtBQUFBLEtBRkYsQUFFRSxBQUlBLDhCQUFDLGNBQUQsc0JBQUEsQUFBTTs7Z0JBQU47a0JBQUE7QUFBQTtBQUFBLEtBZE4sQUFFRSxBQU1FLEFBTUUsQUFVUDtBQTFCRCIsImZpbGUiOiJIZWFkZXIuanMiLCJzb3VyY2VSb290IjoiQzovVXNlcnMvZWRzb24ubWFjaGFkby9Eb2N1bWVudHMvZXRoZXJldW1fc29saWRpdHkva2lja3N0YXJ0In0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHNcXEhlYWRlci5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIk1lbnUiLCJMaW5rIiwibWFyZ2luVG9wIl0sIm1hcHBpbmdzIjoiOzs7Ozs7QUFBQSxBQUFPOzs7O0FBQ1AsQUFBUzs7QUFDVCxBQUFTLEFBQVksQUFFckI7Ozs7OztrQkFBZSxZQUFNLEFBQ25CO3lCQUNFLEFBQUMsdUNBQUssT0FBTyxFQUFFLFdBQWYsQUFBYSxBQUFhO2dCQUExQjtrQkFBQSxBQUNFO0FBREY7R0FBQSxrQkFDRSxBQUFDLDhCQUFLLE9BQU4sQUFBWTtnQkFBWjtrQkFBQSxBQUNFO0FBREY7cUJBQ0UsY0FBQSxPQUFHLFdBQUgsQUFBYTtnQkFBYjtrQkFBQTtBQUFBO0tBRkosQUFDRSxBQUNFLEFBR0YsK0JBQUMsY0FBRCxzQkFBQSxBQUFNLFFBQUssVUFBWCxBQUFvQjtnQkFBcEI7a0JBQUEsQUFDRTtBQURGO3FCQUNFLEFBQUMsOEJBQUssT0FBTixBQUFZO2dCQUFaO2tCQUFBLEFBQ0U7QUFERjtxQkFDRSxjQUFBLE9BQUcsV0FBSCxBQUFhO2dCQUFiO2tCQUFBO0FBQUE7S0FGSixBQUNFLEFBQ0UsQUFHRiwrQkFBQSxBQUFDLDhCQUFLLE9BQU4sQUFBWTtnQkFBWjtrQkFBQSxBQUNFO0FBREY7cUJBQ0UsY0FBQSxPQUFHLFdBQUgsQUFBYTtnQkFBYjtrQkFBQTtBQUFBO0tBWlIsQUFDRSxBQUtFLEFBS0UsQUFDRSxBQUtUO0FBbEJEIiwiZmlsZSI6IkhlYWRlci5qcyIsInNvdXJjZVJvb3QiOiJDOi9Vc2Vycy9lZHNvbi5tYWNoYWRvL0RvY3VtZW50cy9ldGhlcmV1bV9zb2xpZGl0eS9raWNrc3RhcnQifQ==
